@@ -21,6 +21,9 @@
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Fanani riyadi </a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right">
+            <li><a href="#" id="cari"><i class="material-icons">search</i></a></li>
+          </ul>
           <ul class="right hide-on-med-and-down">
             <li><a href="#About">Tentang kami</a></li>
             <li><a href="#Skills">Skills</a></li>
@@ -32,13 +35,24 @@
     </nav>
   </div>
 
+  <nav style="display:none;" class="white cari">
+    <div class="nav-wrapper">
+      <form action="proses.php" method="POST">
+        <div class="input-field">
+          <input id="search" type="search" placeholder="search" required autofocus="autofocus">
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons" id="clear">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
   <ul class="sidenav" id="mobile-nav">
     <li><a href="#About">About us</a></li>
     <li><a href="#Skills">Skill</a></li>
     <li><a href="#Portofolio">Portofolio</a></li>
     <li><a href="#Contact">Contact Us</a></li>
   </ul>
-
 
   <div class="slides">
     <img src="img/portfolio/6.png" style="height:550px; width:100%;">
@@ -56,7 +70,6 @@
       </div>
     </div>
   </div>
-
 
   <section id="About" class="About scrollspy">
     <div class="container">
@@ -90,7 +103,6 @@
       <div>
       </div>
   </section>
-
 
   <section id="Skills" class="Skills scrollspy">
     <h3 class="center grey-text darken-3">Skills<h3></h3>
@@ -180,9 +192,6 @@
         </div>
     </div>
 
-
-
-
   </section>
   <section id="Contact" class="Contact scrollspy">
     <h3 class="center grey-text darken-3">Kontak kami<h3></h3>
@@ -225,20 +234,15 @@
       </div>
   </section>
 
-
-
   <footer class="center white-text blue darken-2" style="padding: 20px;">
     <p>Fanani Riyadi @Copyright 2019</p>
   </footer>
 
-
-
-
-
-
-
   <!--JavaScript at end of body for optimized loading-->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+
 
   <script>
     const sideNav = document.querySelectorAll('.sidenav');
@@ -250,6 +254,18 @@
     const scroll = document.querySelectorAll('.scrollspy');
     M.ScrollSpy.init(scroll, {
       scrollOffset: 56
+    });
+
+    //tombol cari
+    $(document).ready(function () {
+      $("#cari").click(function () {
+        $(".cari").toggle("slide");
+      });
+    });
+    $(document).ready(function () {
+      $("#clear").click(function () {
+        $("#search").val("");
+      });
     });
   </script>
 </body>
