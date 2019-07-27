@@ -66,17 +66,12 @@
   </ul>
 
   <div class="slides">
-    <img src="img/portfolio/6.png" style="height:550px; width:100%;">
     <div class="container">
       <div class="row">
-        <div class="col s4 m4 offset-m4 offset-s2">
-          <div class="image" style="padding: 45px; position: absolute; margin-top: -430px; ">
-            <img src="img/portfolio/fani.png"
-              style="height:200px; width:200px; border-radius: 100%; border: 3px solid white">
-            <h4 style="color:white ; font-weight:bold; margin-left: -3px; ">Fanani Riyadi</h4>
-            <span style="font-size: 40px; margin-left: -40px; color: white">Web Developer</span>
+        <div class="col s4 m4 offset-m4 offset-s4 ">
+          <div class="image">
+            <!-- hallo -->
           </div>
-
         </div>
       </div>
     </div>
@@ -254,25 +249,25 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    (function () {
-      var options = {
-        whatsapp: "08121848743", // WhatsApp number
-        call_to_action: "chat us", // Call to action
-        position: "right", // Position may be 'right' or 'left'
-      };
-      var proto = document.location.protocol,
-        host = "whatshelp.io",
-        url = proto + "//static." + host;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = url + '/widget-send-button/js/init.js';
-      s.onload = function () {
-        WhWidgetSendButton.init(host, proto, options);
-      };
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    })();
+    // (function () {
+    //   var options = {
+    //     whatsapp: "08121848743", // WhatsApp number
+    //     call_to_action: "chat us", // Call to action
+    //     position: "right", // Position may be 'right' or 'left'
+    //   };
+    //   var proto = document.location.protocol,
+    //     host = "whatshelp.io",
+    //     url = proto + "//static." + host;
+    //   var s = document.createElement('script');
+    //   s.type = 'text/javascript';
+    //   s.async = true;
+    //   s.src = url + '/widget-send-button/js/init.js';
+    //   s.onload = function () {
+    //     WhWidgetSendButton.init(host, proto, options);
+    //   };
+    //   var x = document.getElementsByTagName('script')[0];
+    //   x.parentNode.insertBefore(s, x);
+    // })();
 
     const sideNav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sideNav);
