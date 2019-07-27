@@ -11,15 +11,9 @@
     width: 140px;
     height: 160px;
 }
-.slides img{
-    margin-top: 50px;
-    border-radius: 100%;
-    width: 140px;
-    height: 160px;
-}
 .slides h4{
    color:white;
-   text-shadow:2px 2px #ff0000;
+   text-shadow:2px 2px #ff0000; 
 }
 .slides p{
     color:white;
