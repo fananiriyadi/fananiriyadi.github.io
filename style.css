@@ -5,21 +5,22 @@
     background-size: cover; 
     background-position: center; 
 }
-.image{
-    background-image: url(img/portfolio/fani.png);
-    margin-top: 100px;
-    height: 130px;
-    background-size: cover;
-    background-position: center; 
-    border-radius: 50%;
+.slides img{
+    margin-top: 50px;
+    border-radius: 100%;
+    width: 140px;
+    height: 160px;
 }
-/* @media only screen and (min-width: 992px) {
-    .image{
-        margin-top: 50px;
-        height: 250px;
-        width: 250px;
-        border-radius: 100%;
-        background-position: center; 
-        background-size: cover;
-    }
-  } */
+.slides img{
+    margin-top: 50px;
+    border-radius: 100%;
+    width: 140px;
+    height: 160px;
+}
+.slides h4{
+   color:white;
+   text-shadow:2px 2px #ff0000;
+}
+.slides p{
+    color:white;
+ }
