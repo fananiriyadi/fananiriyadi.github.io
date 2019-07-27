@@ -5,6 +5,9 @@
     background-size: cover; 
     background-position: center; 
 }
+body{
+    font-family:sans-serif;
+}
 .slides img{
     margin-top: 50px;
     border-radius: 100%;
